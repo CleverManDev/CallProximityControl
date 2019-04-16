@@ -1,144 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main_root"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_main_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:dividerPadding="8dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-        <!--	android:divider="?android:attr/dividerHorizontal"
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:dividerPadding="8dp"
+		android:orientation="vertical"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+		<!--	android:divider="?android:attr/dividerHorizontal"
 				android:showDividers="middle"-->
 
-        <TextView
-            android:id="@+id/text_service"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="@string/text_service"
-             />
+		<TextView
+			android:id="@+id/text_service"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="16dp"
+			android:text="@string/text_service" />
 
-        <Switch
-            android:id="@+id/switch_service"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:drawablePadding="16dp"
-            android:drawableStart="@drawable/ic_outline_mobile_friendly_24px"
-            android:paddingEnd="16dp"
-            android:paddingStart="16dp"
-            android:text="@string/switch_service" />
+		<Switch
+			android:id="@+id/switch_service"
+			android:layout_width="match_parent"
+			android:layout_height="64dp"
+			android:drawableStart="@drawable/ic_outline_mobile_friendly_24px"
+			android:drawablePadding="16dp"
+			android:paddingStart="16dp"
+			android:paddingEnd="16dp"
+			android:text="@string/switch_service" />
 
-        <TextView
-            android:id="@+id/text_devices"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="@string/text_devices"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+		<TextView
+			android:id="@+id/text_devices"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="16dp"
+			android:text="@string/text_devices"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" />
 
-        <Switch
-            android:id="@+id/switch_bt_device"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:drawablePadding="16dp"
-            android:drawableStart="@drawable/ic_outline_bluetooth_audio_24px"
-            android:paddingEnd="16dp"
-            android:paddingStart="16dp"
-            android:text="@string/switch_bt_devices" />
+		<Switch
+			android:id="@+id/switch_bt_device"
+			android:layout_width="match_parent"
+			android:layout_height="64dp"
+			android:drawableStart="@drawable/ic_outline_bluetooth_audio_24px"
+			android:drawablePadding="16dp"
+			android:paddingStart="16dp"
+			android:paddingEnd="16dp"
+			android:text="@string/switch_bt_devices" />
 
-        <Switch
-            android:id="@+id/switch_headset"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:drawablePadding="16dp"
-            android:drawableStart="@drawable/ic_outline_headset_mic_24px"
-            android:paddingEnd="16dp"
-            android:paddingStart="16dp"
-            android:text="@string/switch_headset" />
+		<Switch
+			android:id="@+id/switch_headset"
+			android:layout_width="match_parent"
+			android:layout_height="64dp"
+			android:drawableStart="@drawable/ic_outline_headset_mic_24px"
+			android:drawablePadding="16dp"
+			android:paddingStart="16dp"
+			android:paddingEnd="16dp"
+			android:text="@string/switch_headset" />
 
-        <Switch
-            android:id="@+id/switch_speaker"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:drawablePadding="16dp"
-            android:drawableStart="@drawable/ic_outline_speaker_phone_24px"
-            android:paddingEnd="16dp"
-            android:paddingStart="16dp"
-            android:text="@string/switch_speaker" />
-    </LinearLayout>
+		<Switch
+			android:id="@+id/switch_speaker"
+			android:layout_width="match_parent"
+			android:layout_height="64dp"
+			android:drawableStart="@drawable/ic_outline_speaker_phone_24px"
+			android:drawablePadding="16dp"
+			android:paddingStart="16dp"
+			android:paddingEnd="16dp"
+			android:text="@string/switch_speaker" />
+	</LinearLayout>
 
-    <Button
-        android:id="@+id/button_acquire"
-        android:layout_width="wrap_content"
-        android:layout_height="51dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/button_acquire"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_start"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent" />
+	<Button
+		android:id="@+id/button_acquire"
+		android:layout_width="wrap_content"
+		android:layout_height="51dp"
+		android:layout_marginBottom="8dp"
+		android:text="@string/button_acquire"
+		android:visibility="gone"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/button_start"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread"
+		app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_start"
-        android:visibility="gone"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_acquire"
-        app:layout_constraintEnd_toStartOf="@+id/button_stop"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_acquire" />
+	<Button
+		android:id="@+id/button_start"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/button_start"
+		android:visibility="gone"
+		app:layout_constraintBaseline_toBaselineOf="@+id/button_acquire"
+		app:layout_constraintEnd_toStartOf="@+id/button_stop"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/button_acquire" />
 
-    <Button
-        android:id="@+id/button_stop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_stop"
-        android:visibility="gone"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_start"
-        app:layout_constraintEnd_toStartOf="@+id/button_release"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_start" />
+	<Button
+		android:id="@+id/button_stop"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/button_stop"
+		android:visibility="gone"
+		app:layout_constraintBaseline_toBaselineOf="@+id/button_start"
+		app:layout_constraintEnd_toStartOf="@+id/button_release"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/button_start" />
 
-    <Button
-        android:id="@+id/button_release"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_release"
-        android:visibility="gone"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_stop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_stop" />
+	<Button
+		android:id="@+id/button_release"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/button_release"
+		android:visibility="gone"
+		app:layout_constraintBaseline_toBaselineOf="@+id/button_stop"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/button_stop" />
 
-    <Button
-        android:id="@+id/button_check_speaker"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/button_check_speaker"
-        app:layout_constraintBottom_toTopOf="@+id/button_acquire"
-        app:layout_constraintStart_toStartOf="@+id/button_acquire"
-        android:visibility="gone" />
+	<Button
+		android:id="@+id/button_check_speaker"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:layout_marginBottom="16dp"
+		android:text="@string/button_check_speaker"
+		android:visibility="gone"
+		app:layout_constraintBottom_toTopOf="@+id/button_acquire"
+		app:layout_constraintStart_toStartOf="@+id/button_acquire" />
 
-    <Button
-        android:id="@+id/button_check_service"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="@string/button_check_service"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/button_check_speaker"
-        app:layout_constraintStart_toStartOf="@+id/button_start" />
+	<Button
+		android:id="@+id/button_check_service"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:text="@string/button_check_service"
+		android:visibility="gone"
+		app:layout_constraintBottom_toBottomOf="@+id/button_check_speaker"
+		app:layout_constraintStart_toStartOf="@+id/button_start" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

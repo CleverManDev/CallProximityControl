@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-		  package="com.cmdev.callproximitycontrol">
+	xmlns:tools="http://schemas.android.com/tools"
+	package="com.cmdev.callproximitycontrol">
 
 	<permission
 		android:name="com.cmdev.callproximitycontrol.PRIVATE"
@@ -18,7 +19,8 @@
 		android:roundIcon="@mipmap/ic_launcher_round"
 		android:supportsRtl="true"
 		android:theme="@style/AppTheme"
-		android:fullBackupContent="true">
+		android:fullBackupContent="true"
+		tools:ignore="GoogleAppIndexingWarning">
 
 		<activity
 			android:name=".MainActivity"

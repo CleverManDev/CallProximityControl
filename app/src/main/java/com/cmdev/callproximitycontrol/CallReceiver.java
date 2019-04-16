@@ -26,6 +26,9 @@ public class CallReceiver extends BroadcastReceiver {
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		final String action = intent.getAction();
+		if (action == null) {
+			return;
+		}
 		mTelephonyManager = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
 
 		switch (action) {

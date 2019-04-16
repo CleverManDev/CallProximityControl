@@ -1,5 +1,6 @@
 package com.cmdev.callproximitycontrol;
 
+import android.annotation.SuppressLint;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -23,7 +24,8 @@ import static com.cmdev.callproximitycontrol.MainActivity.DEBUG;
 //http://developer.alexanderklimov.ru/android/java/timer.php
 
 public class WakeLockService extends Service {
-	private static final String TAG = "WakeLockService";
+	private static final String TAG = WakeLockService.class.getSimpleName();
+	private static final String WAKELOCK_TAG = "cmdev:wakelock";
 	private static final String CHANNEL_ID = "CallProximityControl";
 
 
@@ -53,7 +55,7 @@ public class WakeLockService extends Service {
 		startForeground(NOTIFICATION_ID, foregroundNotification());
 		PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
 		if (pm != null) {
-			mProximityWakeLock = pm.newWakeLock(PowerManager.PROXIMITY_SCREEN_OFF_WAKE_LOCK, TAG);
+			mProximityWakeLock = pm.newWakeLock(PowerManager.PROXIMITY_SCREEN_OFF_WAKE_LOCK, WAKELOCK_TAG);
 		}
 
 		AudioManager am = (AudioManager) getSystemService(AUDIO_SERVICE);
