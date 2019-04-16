@@ -33,6 +33,7 @@ public class WakeLockService extends Service {
 
 	private static final int NOTIFICATION_ID = 10;
 
+
 	public static final String ACTION_SERVICE_STOP = "com.cmdev.callproximitycontrol.SERVICE_STOP";
 	public static final String ACTION_SPEAKER_ON = "com.cmdev.callproximitycontrol.SPEAKER_ON";
 	public static final String ACTION_SPEAKER_OFF = "com.cmdev.callproximitycontrol.SPEAKER_OFF";
