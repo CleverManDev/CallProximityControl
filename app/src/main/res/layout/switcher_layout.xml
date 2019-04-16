@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_main_root">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:dividerPadding="8dp">
+<!--	android:divider="?android:attr/dividerHorizontal"
+		android:showDividers="middle"-->
+
+		<TextView
+			android:id="@+id/text_service"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="16dp"
+			android:text="@string/text_service"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" />
+
+		<Switch
+			android:id="@+id/switch_service"
+			android:layout_width="match_parent"
+			android:layout_height="64dp"
+			android:drawablePadding="16dp"
+			android:drawableStart="@drawable/ic_outline_mobile_friendly_24px"
+			android:paddingEnd="16dp"
+			android:paddingStart="16dp"
+			android:text="@string/switch_service"/>
+
+
+		<View
+			android:id="@+id/divider"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="?android:attr/listDivider" />
+
+		<TextView
+			android:id="@+id/text_devices"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="16dp"
+			android:text="@string/text_devices"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" />
+
+		<Switch
+			android:id="@+id/switch_bt_device"
+			android:layout_width="match_parent"
+			android:layout_height="64dp"
+			android:drawablePadding="16dp"
+			android:drawableStart="@drawable/ic_outline_bluetooth_audio_24px"
+			android:paddingEnd="16dp"
+			android:paddingStart="16dp"
+			android:text="@string/switch_bt_devices" />
+
+		<Switch
+			android:id="@+id/switch_headset"
+			android:layout_width="match_parent"
+			android:layout_height="64dp"
+			android:drawablePadding="16dp"
+			android:drawableStart="@drawable/ic_outline_headset_mic_24px"
+			android:paddingEnd="16dp"
+			android:paddingStart="16dp"
+			android:text="@string/switch_headset"/>
+
+		<Switch
+			android:id="@+id/switch_speaker"
+			android:layout_width="match_parent"
+			android:layout_height="64dp"
+			android:drawablePadding="16dp"
+			android:drawableStart="@drawable/ic_outline_speaker_phone_24px"
+			android:paddingEnd="16dp"
+			android:paddingStart="16dp"
+			android:text="@string/switch_speaker"/>
+	</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
